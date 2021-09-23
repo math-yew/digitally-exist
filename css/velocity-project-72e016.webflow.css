@@ -129,6 +129,7 @@ p {
 }
 
 .navigation-bar {
+  position: static;
   background-color: #fff;
   opacity: 0.52;
 }
@@ -140,7 +141,7 @@ p {
   font-family: 'Open Sans', sans-serif;
   color: #2f80b7;
   font-size: 25px;
-  line-height: 25px;
+  line-height: 30px;
   font-weight: 300;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -534,8 +535,8 @@ p {
 }
 
 .call-to-action {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #bccbd5;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#353535), to(hsla(0, 0%, 62.3%, 0.91))), url('../images/geometric-2018038_1920.png');
   background-image: linear-gradient(180deg, #353535, hsla(0, 0%, 62.3%, 0.91)), url('../images/geometric-2018038_1920.png');
@@ -735,8 +736,24 @@ p {
 
 .faq-body {
   position: relative;
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: transparent;
 }
 
@@ -872,6 +889,7 @@ p {
 }
 
 .quotehead {
+  margin-top: 40px;
   color: #b2d8ff;
   font-weight: 600;
 }
@@ -884,6 +902,7 @@ p {
 }
 
 .quote-paragraph.small {
+  margin-bottom: 40px;
   font-size: 1.25em;
   line-height: 1em;
 }
@@ -894,7 +913,13 @@ p {
   display: -ms-flexbox;
   display: flex;
   height: 50px;
-  margin-top: 40px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -903,7 +928,21 @@ p {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  background-color: #00ff37;
+  color: #fff;
   font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.73);
+}
+
+.button-2.question {
+  margin-top: 0px;
+  margin-bottom: 40px;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  background-color: #2298ff;
 }
 
 .list-item {
@@ -916,7 +955,7 @@ p {
 
 .list {
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   padding-right: 40px;
   padding-left: 60px;
 }
@@ -1414,6 +1453,11 @@ p {
 @media screen and (max-width: 479px) {
   .button {
     margin-bottom: 25px;
+  }
+
+  .brand-text {
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .hero-section.centered {
