@@ -178,7 +178,11 @@ p {
   padding: 15px;
   border: 1px solid #dcebf7;
   border-radius: 5px;
-  background-color: #ececec;
+  background-color: #ddd;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ececec), to(hsla(0, 0%, 100%, 0))), url('../images/lines.png');
+  background-image: linear-gradient(180deg, #ececec, hsla(0, 0%, 100%, 0)), url('../images/lines.png');
+  background-position: 0px 0px, 50% 100%;
+  background-size: auto, cover;
   box-shadow: 9px 5px 11px -2px rgba(0, 0, 0, 0.19);
   color: #979797;
   text-align: center;
